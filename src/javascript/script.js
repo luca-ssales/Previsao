@@ -1,5 +1,5 @@
 const form = document.querySelector('#search');
-const apikey = '33cb27fb51c88f53e7ec0d648259d41d';
+const apikey = 'chave_api';
 let relogioIntervalo; 
 
 async function getWeatherData(url) {
