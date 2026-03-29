@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="favcon.png">
+</head>
+
+<body>
+    <div id="container">
+
+        <form id="search">
+            <i class="fa-solid fa-location-dot"></i>
+
+            <input type="search" name="city_name" id="city_name" placeholder="Procurar Cidade" />
+
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+
+        <div id="weather">
+
+            <div id="city_header">
+                <h1 id="title">Rolante, BR</h1>
+                <p id="city_time">14:30</p>
+            </div>
+            
+            <div id="infos">
+
+                <div id="temp">
+                    <img id="temp_img" src="https://openweathermap.org/img/wn/04d@2x.png" alt="Ícone do clima">
+
+                    <div>
+                        <p id="temp_value">
+                            32 <sup>°C</sup>
+                        </p>
+                        <p id="temp_description">
+                            Ensolarado
+                        </p>
+                    </div>
+                </div>
+
+                <div class="other_infos">
+                    <div class="infos">
+                        <i class="fa-solid fa-temperature-arrow-up"></i>
+                        <h2>Temp. máx</h2>
+                        <p id="temp_max">35 <sup>°C</sup></p>
+                    </div>
+                </div>
+
+                <div class="other_infos">
+                    <div class="infos">
+                        <i class="fa-solid fa-temperature-arrow-down"></i>
+                        <h2>Temp. mín</h2>
+                        <p id="temp_min">12 <sup>°C</sup></p>
+                    </div>
+                </div>
+
+                <div class="other_infos">
+                    <div class="infos">
+                        <i class="fa-solid fa-droplet"></i>
+                        <h2>Humidade</h2>
+                        <p id="humidity">50%</p>
+                    </div>
+                </div>
+
+                <div class="other_infos">
+                    <div class="infos">
+                        <i class="fa-solid fa-wind"></i>
+                        <h2>Vento</h2>
+                        <p id="wind_speed">10 km/h</p>
+                    </div>
+                </div>
+
+                <div class="other_infos">
+                    <div class="infos">
+                        <i class="fa-solid fa-sun"></i>
+                        <h2>Nascer do Sol</h2>
+                        <p id="sunrise_time">06:00</p>
+                    </div>
+                </div>
+
+                <div class="other_infos">
+                    <div class="infos">
+                        <i class="fa-solid fa-moon"></i>
+                        <h2>Pôr do Sol</h2>
+                        <p id="sunset_time">18:30</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="alert"></div>
+
+        </div>
+
+    </div>
+    <script src="src/javascript/script.js"></script>
+</body>
+
+</html>
